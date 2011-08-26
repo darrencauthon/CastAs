@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>CastAs</id>
+    <version>1.0</version>
+    <authors>Darren Cauthon</authors>
+    <language>en-US</language>
+	<description>Provides CastAs generic extension method, for left-to-right, parenthesis-free casting.</description>
+	<summary>yourObject.CastAs SomethingElse ();</summary>
+    <projectUrl>https://github.com/darrencauthon/CastAs</projectUrl>
+  </metadata>
+</package>
