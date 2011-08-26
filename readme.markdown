@@ -15,7 +15,11 @@ This library contains one thing:  a tiny static extension method on Object that 
 
 ```c#
 var viewName = actionResult.CastAs<ViewResult>().ViewName;
+// or
+var viewName = actionResult.CastTo<ViewResult>().ViewName;
 ```
+
+CastAs<T> will do a (obj as T) cast, and CastTo<T> will do a (T)obj.
 
 It's very minor, I know.  But it helps me, especially when testing.
 
