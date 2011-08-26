@@ -16,13 +16,13 @@ namespace CastAs.Tests
             var apple = new Apple();
             apple.CastAs<Fruit>().ShouldBeSameAs(apple);
         }
+
+        [Test]
+        public void Returns_null_if_the_object_is_of_a_different_type()
+        {
+            var fruit = new Fruit();
+            fruit.CastAs<Vegetable>().ShouldBeNull();
+        }
     }
 
-    public class Fruit
-    {
-    }
-
-    public class Apple : Fruit
-    {
-    }
 }
